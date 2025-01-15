@@ -3,6 +3,7 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
 public class buttons {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Button Input Example");
@@ -20,7 +21,6 @@ public class buttons {
 
         JButton button = new JButton("Submit grade");
         button.setBounds(225,50, 150,30);
-
         
 
         JLabel label = new JLabel("Enter class grades for class number 1 in bottom box");
@@ -38,21 +38,23 @@ public class buttons {
             public void actionPerformed(ActionEvent e) {
 
                 while (classes_inputed<7) {
-                    try {
-                        String input = textField.getText();
-                        String input2 = textField2.getText();
+                    
+                        String input = textField2.getText();
+                        String input2 = textField.getText();
                         classes_inputed++;
                         
-                        if(input.equals("A") || input.equals("a")) {
+                        if(input.equals("A") || input.equals("a") || input.equals("A+") || input.equals("a+")) {
                                 grades = grades + 4;
 
                                 if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
                                     grades++;
 
+
                                 }
 
                                 else if (input2.equals("honor") || input2.equals ("Honor")) {
                                     grades = grades + 0.5;
+
                                 
                                 }
 
@@ -64,10 +66,12 @@ public class buttons {
                                 if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
                                     grades++;
 
+
                                 }
 
                                 if (input2.equals("honor") || input2.equals ("Honor")) {
                                     grades = grades + 0.5;
+
                                 
                                 }
 
@@ -80,10 +84,12 @@ public class buttons {
                                 if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
                                     grades++;
 
+
                                 }
 
                                 if (input2.equals("honor") || input2.equals ("Honor")) {
                                     grades = grades + 0.5;
+
                                 
                                 }
                             }
@@ -96,34 +102,157 @@ public class buttons {
                                 if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
                                     grades++;
 
+
                                 }
 
                                 if (input2.equals("honor") || input2.equals ("Honor")) {
-                                    grades = grades + 0.5;
+                                     grades = grades + 0.5;
+
                                 
                                 }
 
                             }
 
-                            if (input.equals("f") || input.equals("F")) {
+                            if (input.equals("f") || input.equals("F") || input.equals ("f+") || input.equals("F+") || input.equals("f-") || input.equals("F-")) {
                                 grades = grades + 0;
+
+                                
+                            }
+
+                            if (input.equals("A-") || input.equals ("a-")) {
+                                grades = grades + 3.7;
 
                                 
                                 if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
                                     grades++;
 
+
                                 }
 
                                 if (input2.equals("honor") || input2.equals ("Honor")) {
                                     grades = grades + 0.5;
+
                                 
+                                }
+
+                                if (input.equals("B+") || input.equals ("b+")) {
+                                    grades = grades + 3.3;
+    
+                                    
+                                    if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
+                                        grades++;
+    
+    
+                                    }
+    
+                                    if (input2.equals("honor") || input2.equals ("Honor")) {
+                                        grades = grades + 0.5;
+    
+                                    
+                                    }
+    
+                                }
+
+                                if (input.equals("b-") || input.equals ("B-")) {
+                                    grades=grades + 2.7;
+    
+                                    
+                                    if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
+                                        grades++;
+    
+    
+                                    }
+    
+                                    if (input2.equals("honor") || input2.equals ("Honor")) {
+                                        grades = grades + 0.5;
+    
+                                    
+                                    }
+    
+                                }
+
+                                if (input.equals("C+") || input.equals ("c+")) {
+                                    grades=grades + 2.3;
+    
+                                    
+                                    if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
+                                        grades++;
+    
+    
+                                    }
+    
+                                    if (input2.equals("honor") || input2.equals ("Honor")) {
+                                        grades = grades + 0.5;
+    
+                                    
+                                    }
+    
+                                }
+
+                                if (input.equals("c-") || input.equals ("C-")) {
+                                    grades=grades+ 1.7;
+    
+                                    
+                                    if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
+                                        grades++;
+    
+    
+                                    }
+    
+                                    if (input2.equals("honor") || input2.equals ("Honor")) {
+                                        grades = grades + 0.5;
+    
+                                    
+                                    }
+    
+                                }
+
+                                if (input.equals("D+") || input.equals ("d+")) {
+                                    grades = grades + 1.3;
+    
+                                    
+                                    if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
+                                        grades++;
+    
+    
+                                    }
+    
+                                    if (input2.equals("honor") || input2.equals ("Honor")) {
+                                        grades = grades + 0.5;
+    
+                                    
+                                    }
+    
+                                }
+
+                                if (input.equals("d-") || input.equals ("D-")) {
+                                    grades = grades + 0.7;
+    
+                                    
+                                    if (input2.equals("ap") || input2.equals("AP") || input2.equals("aP") ||  input2.equals("Ap")) {
+                                        grades++;
+    
+    
+                                    }
+    
+                                    if (input2.equals("honor") || input2.equals ("Honor")) {
+                                        grades = grades + 0.5;
+    
+                                    
+                                    }
+    
                                 }
 
                             }
 
                             
 
+                            
+
+                            
+
                             double gpa = ((int) ((grades/classes_inputed+ 0.005)*100))/100.0;
+                             
                         
                              if (classes_inputed == 7) {
 
@@ -147,14 +276,9 @@ public class buttons {
                         }
 
                         
-                         
-                       
-                        System.out.println(grades);
+
                         break;
                         
-                    } catch (NumberFormatException ex) {
-                        label.setText("Please enter a proper integer!");
-                    }
                     
                 }
               
