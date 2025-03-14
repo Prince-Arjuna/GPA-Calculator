@@ -28,7 +28,8 @@ public class buttons {
         label4.setBounds(50,0,350,300);
         label.setBounds(50, 100, 300, 30); 
         JLabel label2 = new JLabel("");
-        JLabel label3 = new JLabel("Congrats on getting straight As");
+        JLabel label3 = new JLabel("Congrats on getting a perfect GPA");
+
 
         label2.setBounds(50,100,300,30);
         button.addActionListener(new ActionListener() {
@@ -262,6 +263,7 @@ public class buttons {
                             if (gpa >= 4.0 && classes_inputed ==7) {
                             
                                 label3.setBounds(50, 115,300,30);
+                                label4.setVisible(false);
 
                                 
                             }
@@ -298,3 +300,5 @@ public class buttons {
         frame.add(textField2);
     }
 }
+
+    
